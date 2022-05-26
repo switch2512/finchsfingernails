@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&display=swap');
+
+
 * {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family:'Montserrat';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -65,18 +67,18 @@ code {
   .splash-title {
     margin: auto;
     margin-top: 20%;
-    width: 375px;
+    width: 700px;
   }
 
   h1 {
     position: sticky;
     top: 50px;
     text-align: center;
-    border-radius: 25px;
-    background-color: rgb(187, 237, 181, .8);
-    padding: 0px;
+    border-radius: 55px;
+    background-color: rgba(255, 255, 255, 0.8);
     font-size: 100px;
-    box-shadow: 0px 0px 10px 10px rgb(187, 237, 181, .8);
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.8);
+    font-family: 'Bilbo Swash Caps';
   }
 
   button {
@@ -97,7 +99,6 @@ code {
   .hidden-splash {
     width: 44%;
     background-color: rgb(255, 255, 255, .8);
-    box-shadow: 0px 0px 10px 10px black;
     border-radius: 10px;
     margin: auto;
     h2, p {
@@ -110,16 +111,10 @@ code {
     width: 80vw;
     justify-content: space-between;
     img {
-      height: 100px;
-      position: relative;
-      top: 10px;
-    }
-    #one {
-      left: 245px;
-    }
-    #two {
-      left: 581px;
-      transform: scalex(-1)
+      width:10%;
+      position: absolute;
+      top: -153px;
+      left: 45%;
     }
   }
 }
@@ -145,7 +140,9 @@ code {
       text-align: center;
       margin-top: 30px;
       background-color: #ECBEFD;
-      border-radius: 10px;
+      border-radius: 15px;
+      padding: 10px;
+      box-shadow: 0px 0px 5px 5px #ECBEFD;
     }
 
     .splash-title {
@@ -153,20 +150,49 @@ code {
       margin:auto;
     }
 
-    > p {
-      margin: 25px;
-    }
-
     .body {
       display: flex;
       flex-direction: column;
-      backdrop-filter: blur(3px);
+      backdrop-filter: blur(10px);
+      outline: 1px solid #ECBEFD;
+      border-radius: 15px;
+      margin-top: 50px;
+      font-weight: bolder;
+      font-size: large;
+      text-align: center;
+      box-shadow: 0px 0px 5px 5px gray;
       .title-row {
+        background-color: #ECBEFD;
+        padding: 10px;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+      }
+      .title-row2 {
+        background-color: #ECBEFD;
+        padding: 10px;
       }
       .row {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        padding: 8px;
+      }
+      .row, .title-row, .title-row2, .odd {
+        * {
+          width: 500px;
+        }
+      }
+
+      .odd {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 8px;
+        background-color: rgb(236, 190, 253, .4);
+      }
+      .footer {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
       }
     }
   }
