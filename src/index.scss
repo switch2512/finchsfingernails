@@ -7,6 +7,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  overflow: hidden;
+}
+
 /***********/
 /**COLORS***/
 /***********/
@@ -22,11 +26,9 @@ code {
   display: flex;
   justify-content: space-around;
   width: 100vw;
-  background-color: $pastel-green;
   top: 0;
   left:0;
   z-index: 5;
-  box-shadow: 0px 0px 5px 5px $pastel-green;
 }
 
 .navbar h2 {
@@ -36,9 +38,10 @@ code {
 .navbar button {
   width: 20%;
   text-align: center;
-  transition: .5s;
+  transition: 2s;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .navbar button:hover {
@@ -49,7 +52,7 @@ code {
   width: 80vw;
   margin:auto;
 
-  img {
+  > img {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -76,18 +79,95 @@ code {
     box-shadow: 0px 0px 10px 10px rgb(187, 237, 181, .8);
   }
 
-  .hidden-splash {
+  button {
     position: absolute;
-    top: 105%;
-    padding: 20px;
-    width: 40%;
+    z-index: 2;
+    bottom: 15%;
+    left: 47.5%;
+    width:5%;
+    border-radius: 10px;
+    background-color:#BBEDB5;
+    cursor: pointer;
+  }
+
+  button:active {
+    filter: brightness(125%);
+  }
+
+  .hidden-splash {
+    width: 44%;
     background-color: rgb(255, 255, 255, .8);
     box-shadow: 0px 0px 10px 10px black;
     border-radius: 10px;
-    margin-bottom: 100px;
+    margin: auto;
+    h2, p {
+      padding: 10px;
+    }
   }
 
   .splash-flex {
-    display: flex;
+    position: absolute;
+    width: 80vw;
+    justify-content: space-between;
+    img {
+      height: 100px;
+      position: relative;
+      top: 10px;
+    }
+    #one {
+      left: 245px;
+    }
+    #two {
+      left: 581px;
+      transform: scalex(-1)
+    }
+  }
+}
+
+.pricing {
+  > img {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    object-fit: cover;
+    z-index: -2;
+  }
+  > div {
+    width: 80%;
+    position: absolute;
+    top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+      background-color: #ECBEFD;
+      border-radius: 10px;
+    }
+
+    .splash-title {
+      width: 200px;
+      margin:auto;
+    }
+
+    > p {
+      margin: 25px;
+    }
+
+    .body {
+      display: flex;
+      flex-direction: column;
+      backdrop-filter: blur(3px);
+      .title-row {
+      }
+      .row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+    }
   }
 }

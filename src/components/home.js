@@ -2,18 +2,33 @@ import React, {useState} from 'react';
 import ReactDOM from 'react-dom/client';
 
 function Home(props) {
+  const [moveUpToggle, setMoveUpToggle] = useState([true, 'visible', '115%', 'none']);
+  
+    const handleMoveUp = () => {
+      if (moveUpToggle[0]) {
+        setMoveUpToggle([false, 'hidden', '25%', 'inline']);
+        console.log(moveUpToggle[0])
+      } else if (!moveUpToggle[0]) {
+        setMoveUpToggle([true, 'visible', '115%', 'none']);
+        console.log(moveUpToggle[0])
+      } else {
+        console.log('error')
+      }
+    }
     return (
       <div class='home'>
         <img src={require('../pics/finch-courtyard.jpg')} />
-        <div class='splash-title'>
+        <div class='splash-title' style={{visibility: moveUpToggle[1]}}>
           <h1>Home</h1>
         </div>
-        <div class="splash-flex">
+        <button onClick={handleMoveUp}>I'm a button</button>
+        <div class="splash-flex" style={{top: moveUpToggle[2], transition: '2s'}}>
+            <img src={require("../pics/balloon.png")} id="one"/>
+            <img src={require("../pics/balloon.png")} id="two"/>
           <div class="hidden-splash">
             <h2>Bio</h2>
-            <p>In her spare time Nicole likes to fart and pass gas to excess.</p>
+            <p>Nicole is a woman and a college studnet. She currently works and studies. In her spare time Nicole likes to rip farts and pass gas to excess.</p>
           </div>
-          <img src={props.nav} />
         </div>
       </div>
     );

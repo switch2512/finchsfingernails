@@ -10,13 +10,16 @@ import Footer from './components/footer'
 
 function App() {
   const [nav, setNav] = useState(<Home />);
+  const [navColor, setNavColor] = useState('#BBEDB5')
 
   const handleHome  = () => {
     setNav(<Home />)
+    setNavColor('#BBEDB5')
   }
 
   const handlePricing = () => {
     setNav(<Pricing />)
+    setNavColor('#ECBEFD')
   }
 
   const handleSchedule = () => {
@@ -30,10 +33,9 @@ function App() {
   const handleReviews = () => {
     setNav(<Reviews />)
   }
-
   return (
     <div>
-      <Navbar handleHome={handleHome} handlePricing={handlePricing} handleSchedule={handleSchedule} handleGallery={handleGallery} handleReviews={handleReviews} />
+      <Navbar navColor={navColor} handleHome={handleHome} handlePricing={handlePricing} handleSchedule={handleSchedule} handleGallery={handleGallery} handleReviews={handleReviews} />
       {nav}
     </div>
   );
