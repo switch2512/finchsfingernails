@@ -53,20 +53,18 @@ code {
 
   > h1 {
     color: white;
-    filter:brightness(80%);
     font-size: 50px;
     text-align: center;
     position: sticky;
     top: 50px;
     background-color:rgb(187, 237, 181);
     margin: auto;
-    width: 190px;
     border-radius: 30px;
     padding: 25px;
   }
 
   img {
-    position: absolute;
+    position: fixed;
     top:0px;
     left:0px;
     z-index: -1;
@@ -76,6 +74,8 @@ code {
   }
   
   p {
+    top: 100%;
+    position: absolute;
     height: 1000px;
   }
 }
