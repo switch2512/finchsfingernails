@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
 import ReactDOM from 'react-dom/client';
 
-function Pricing() {
+function Footer() {
     return (
-      <div class='pricing'>
-        <h1>Pricing</h1>
+      <div class='footer'>
+        <h1>Footer</h1>
       </div>
     );
   }
   
-  export default Pricing;
+  export default Footer;

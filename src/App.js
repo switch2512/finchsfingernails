@@ -6,6 +6,7 @@ import Pricing from './components/pricing'
 import Schedule from './components/schedule';
 import Gallery from './components/gallery';
 import Reviews from './components/reviews'
+import Footer from './components/footer'
 
 function App() {
   const [nav, setNav] = useState(<Home />);

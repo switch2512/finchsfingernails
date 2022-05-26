@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 
 function Schedule() {
     return (
-      <div class='home'>
+      <div class='schedule'>
         <h1>Schedule</h1>
       </div>
     );
