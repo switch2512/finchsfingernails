@@ -27,17 +27,19 @@ code {
   position: fixed;
   display: flex;
   justify-content: space-around;
+  align-items: flex-start;
   width: 100vw;
   top: 0;
   left:0;
   z-index: 5;
-  background-color: rgb(0, 0, 0, .4);
-  box-shadow: 0px 0px 20px 20px rgb(0, 0, 0, .4);
+  img {
+    height: 17vh;
+  }
 }
 
 .navbar h2 {
   margin: 10px 0px 10px;
-  color: white;
+  color: #69443c;
 }
 
 .navbar button {
@@ -47,12 +49,52 @@ code {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  padding-top: 65px;
 }
 
 .navbar button:hover {
-  text-shadow: 2px 2px 3px black;
+  font-size: 18px;
 }
 
+.home {
+  margin: auto;
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  >div {
+    width: 47vw;
+    overflow: hidden;
+    height: 55vh;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+  }
+  .text-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    h1 {
+      font-size: 4.5vw;
+    }
+
+    h2 {
+      font-size: 1.9vw;
+    }
+
+    >div {
+      width: 40%;
+    }
+  .subtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+  }
+  }
+}
 
 .pricing {
   > img {
