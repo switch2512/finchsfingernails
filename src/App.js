@@ -24,10 +24,12 @@ function App() {
 
   const handleSchedule = () => {
     setNav(<Schedule />)
+    setNavColor('#96D6F7')
   }
 
   const handleGallery = () => {
     setNav(<Gallery />)
+    setNavColor('#FFEE8A')
   }
 
   const handleReviews = () => {

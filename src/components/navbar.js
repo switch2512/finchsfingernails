@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom/client';
 function Navbar(props) {
     const navColor = props.navColor
     return (
-      <div class='navbar' style={{backgroundColor:navColor, boxShadow:`0px 0px 5px 5px ${navColor}`}}>
+      <div class='navbar'>
         <button onClick={props.handleHome} type="button"><h2>HOME</h2></button>
         <button onClick={props.handlePricing} type="button"><h2>PRICING</h2></button>
         <button onClick={props.handleSchedule} type="button"><h2>SCHEDULE</h2></button>
