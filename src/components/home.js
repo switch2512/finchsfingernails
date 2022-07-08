@@ -19,7 +19,7 @@ function Home(props) {
       <div class='home'>
         <img src={require('../pics/finch-courtyard.jpg')} />
         <div class='splash-title' style={{visibility: moveUpToggle[1]}}>
-          <h1>Finch's Fingernails</h1>
+          <h1>Testing</h1>
         </div>
         <button onClick={handleMoveUp}><strong>I'm a button</strong></button>
         <div class="splash-flex" style={{transform: moveUpToggle[2], transition: '2s'}}>
