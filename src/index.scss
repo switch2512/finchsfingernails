@@ -58,121 +58,77 @@ code {
 
 .home {
   margin: auto;
-  margin-top: 20vh;
+  margin-top: 25vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  >div {
-    width: 47vw;
-    overflow: hidden;
-    height: 55vh;
-  }
+  
   img {
     object-fit: cover;
-    width: 100%;
   }
+
+  .text-div, .pic-div {
+    width: 48vw;
+  }
+
+  .pic-div {
+    img {
+      height: 100%;
+      width: 100%;
+    object-fit: contain;
+    }
+  }
+
   .text-div {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    >div {
+      margin-top: 5%;
+    }
+  }
 
+  .subtext1 {
+    width: 40%;
     h1 {
       font-size: 4.5vw;
     }
+  }
 
-    h2 {
-      font-size: 1.9vw;
-    }
-
-    >div {
-      width: 40%;
-    }
-  .subtext {
+  .subtext2 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 100%;
-  }
+    width: 60%;
+    padding: 0% 10% 0% 10%;
+    h2 {
+      font-size: 2vw;
+      font-weight: 1;
+    }
+    p {
+      padding-top: 5%;
+    }
   }
 }
 
 .pricing {
-  > img {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    object-fit: cover;
-    z-index: -2;
-  }
-  > div {
-    width: 80%;
-    position: absolute;
-    top: 50px;
-    margin-top: 100px;
-    margin-left: 10%;
-    margin-right: 10%;
-
-    h1 {
+  width: 60vw;
+  margin: auto;
+  margin-top: 25vh;
+  .price-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .price-item {
+      width: 29.5vw;
+      height: 10vw;
       text-align: center;
-      margin-top: 30px;
-      background-color: #ECBEFD;
-      border-radius: 15px;
-      padding: 10px;
-      box-shadow: 0px 0px 5px 5px #ECBEFD;
-    }
-
-    .splash-title {
-      width: 200px;
-      margin:auto;
-    }
-
-    .body {
+      background-color: rgb(234,224,222);
+      margin-bottom: .5vw;
       display: flex;
-      flex-direction: column;
-      backdrop-filter: blur(10px);
-      border-radius: 15px;
-      margin-top: 50px;
-      font-weight: bolder;
-      font-size: large;
-      text-align: center;
-      box-shadow: 0px 0px 5px 5px #ECBEFD;
-      .title-row {
-        background-color: #ECBEFD;
-        padding: 10px;
-        border-top-right-radius: 15px;
-        border-top-left-radius: 15px;
-      }
-      .title-row2 {
-        background-color: #ECBEFD;
-        padding: 10px;
-      }
-      .row {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 8px;
-      }
-      .row, .title-row, .title-row2, .odd {
-        * {
-          width: 500px;
-        }
-        .title-row, .title-row2 {
-          padding-left: 25px;
-        }
-      }
-
-      .odd {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 8px;
-        background-color: rgb(236, 190, 253, .4);
-      }
-      .footer {
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        font-size: vw;
       }
     }
   }
