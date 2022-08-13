@@ -27,17 +27,19 @@ code {
   position: fixed;
   display: flex;
   justify-content: space-around;
+  align-items: flex-start;
   width: 100vw;
   top: 0;
   left:0;
   z-index: 5;
-  background-color: rgb(0, 0, 0, .4);
-  box-shadow: 0px 0px 20px 20px rgb(0, 0, 0, .4);
+  img {
+    height: 17vh;
+  }
 }
 
 .navbar h2 {
   margin: 10px 0px 10px;
-  color: white;
+  color: #69443c;
 }
 
 .navbar button {
@@ -47,161 +49,86 @@ code {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  padding-top: 65px;
 }
 
 .navbar button:hover {
-  text-shadow: 2px 2px 3px black;
+  font-size: 18px;
 }
 
 .home {
-  width: 80vw;
-  margin:auto;
-
-  > img {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
+  margin: auto;
+  margin-top: 25vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+  img {
     object-fit: cover;
-    z-index: -2;
   }
 
-  .splash-title {
-    margin: auto;
-    margin-top: 20%;
-    width: 700px;
+  .text-div, .pic-div {
+    width: 48vw;
   }
 
-  h1 {
-    position: sticky;
-    top: 50px;
-    text-align: center;
-    border-radius: 55px;
-    background-color: rgba(255, 255, 255, 0.8);
-    font-size: 100px;
-    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.8);
-    font-family: 'Bilbo Swash Caps';
-  }
-
-  button {
-    position: absolute;
-    z-index: 2;
-    bottom: 15%;
-    left: 47.5%;
-    width:5%;
-    border-radius: 10px;
-    background-color:rgba(255, 255, 255, 0.8);
-    border: none;
-    cursor: pointer;
-  }
-
-  button:active {
-    filter: brightness(125%);
-  }
-
-  .hidden-splash {
-    width: 44%;
-    background-color: rgb(255, 255, 255, .8);
-    border-radius: 10px;
-    margin: auto;
-    h2, p {
-      padding: 10px;
-      text-align: center;
-      font-size: larger;
+  .pic-div {
+    img {
+      height: 100%;
+      width: 100%;
+    object-fit: contain;
     }
   }
 
-  .splash-flex {
-    position: absolute;
-    width: 80vw;
-    justify-content: space-between;
-    img {
-      width:10%;
-      position: relative;
-      top: 15px;
-      left: 45%;
+  .text-div {
+    display: flex;
+    flex-direction: row;
+    >div {
+      margin-top: 5%;
+    }
+  }
+
+  .subtext1 {
+    width: 40%;
+    h1 {
+      font-size: 4.5vw;
+    }
+  }
+
+  .subtext2 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding: 0% 10% 0% 10%;
+    h2 {
+      font-size: 2vw;
+      font-weight: 1;
+    }
+    p {
+      padding-top: 5%;
     }
   }
 }
 
 .pricing {
-  > img {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 0px;
-    object-fit: cover;
-    z-index: -2;
-  }
-  > div {
-    width: 80%;
-    position: absolute;
-    top: 50px;
-    margin-top: 100px;
-    margin-left: 10%;
-    margin-right: 10%;
-
-    h1 {
+  width: 60vw;
+  margin: auto;
+  margin-top: 25vh;
+  .price-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .price-item {
+      width: 29.5vw;
+      height: 10vw;
       text-align: center;
-      margin-top: 30px;
-      background-color: #ECBEFD;
-      border-radius: 15px;
-      padding: 10px;
-      box-shadow: 0px 0px 5px 5px #ECBEFD;
-    }
-
-    .splash-title {
-      width: 200px;
-      margin:auto;
-    }
-
-    .body {
+      background-color: rgb(234,224,222);
+      margin-bottom: .5vw;
       display: flex;
-      flex-direction: column;
-      backdrop-filter: blur(10px);
-      border-radius: 15px;
-      margin-top: 50px;
-      font-weight: bolder;
-      font-size: large;
-      text-align: center;
-      box-shadow: 0px 0px 5px 5px #ECBEFD;
-      .title-row {
-        background-color: #ECBEFD;
-        padding: 10px;
-        border-top-right-radius: 15px;
-        border-top-left-radius: 15px;
-      }
-      .title-row2 {
-        background-color: #ECBEFD;
-        padding: 10px;
-      }
-      .row {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 8px;
-      }
-      .row, .title-row, .title-row2, .odd {
-        * {
-          width: 500px;
-        }
-        .title-row, .title-row2 {
-          padding-left: 25px;
-        }
-      }
-
-      .odd {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding: 8px;
-        background-color: rgb(236, 190, 253, .4);
-      }
-      .footer {
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
+      justify-content: center;
+      align-items: center;
+      h1 {
+        font-size: vw;
       }
     }
   }

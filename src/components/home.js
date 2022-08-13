@@ -17,16 +17,12 @@ function Home(props) {
     }
     return (
       <div class='home'>
-        <img src={require('../pics/finch-courtyard.jpg')} />
-        <div class='splash-title' style={{visibility: moveUpToggle[1]}}>
-          <h1>Finch's Fingernails</h1>
-        </div>
-        <button onClick={handleMoveUp}><strong>I'm a button</strong></button>
-        <div class="splash-flex" style={{transform: moveUpToggle[2], transition: '2s'}}>
-            <img src={require("../pics/balloon.png")}/>
-          <div class="hidden-splash">
-            <h2>Bio</h2>
-            <p><strong>Nicole is a woman and a college student. She currently works and studies. In her spare time Nicole likes to rip farts and pass gas to excess.</strong></p>
+        <div class='pic-div'><img src={require('../pics/polish.jpg')} /></div>
+        <div class='text-div'>
+          <div class='subtext1'><h1>BOOK TODAY</h1></div>
+          <div class='subtext2'>
+            <h2>FINCH'S NAILS OFFERS A VARIETY OF MANICURE SERVICES RIGHT FROM THE COMFORT OF YOUR OWN DORM</h2>
+            <p>NICOLE GIETZEN<br/>@instagram-handle</p>
           </div>
         </div>
       </div>
