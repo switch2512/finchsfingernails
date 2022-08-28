@@ -1,17 +1,16 @@
 {
   "files": {
-    "main.css": "/finchsfingernails/static/css/main.9aa78935.css",
-    "main.js": "/finchsfingernails/static/js/main.98af9122.js",
-    "static/media/beautiful-point-loma.jpg": "/finchsfingernails/static/media/beautiful-point-loma.089d5062d623b3ead31b.jpg",
+    "main.css": "/finchsfingernails/static/css/main.ce6d64bc.css",
+    "main.js": "/finchsfingernails/static/js/main.e00be31b.js",
     "static/media/beach_picture.jpg": "/finchsfingernails/static/media/beach_picture.4cbb9030c5e9132e0360.jpg",
     "static/media/polish.jpg": "/finchsfingernails/static/media/polish.1653f1e20424e4a9d011.jpg",
     "static/media/logo7.png": "/finchsfingernails/static/media/logo7.dd3b35e9707090f313e4.png",
     "index.html": "/finchsfingernails/index.html",
-    "main.9aa78935.css.map": "/finchsfingernails/static/css/main.9aa78935.css.map",
-    "main.98af9122.js.map": "/finchsfingernails/static/js/main.98af9122.js.map"
+    "main.ce6d64bc.css.map": "/finchsfingernails/static/css/main.ce6d64bc.css.map",
+    "main.e00be31b.js.map": "/finchsfingernails/static/js/main.e00be31b.js.map"
   },
   "entrypoints": [
-    "static/css/main.9aa78935.css",
-    "static/js/main.98af9122.js"
+    "static/css/main.ce6d64bc.css",
+    "static/js/main.e00be31b.js"
   ]
 }
