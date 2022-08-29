@@ -5,18 +5,7 @@ function Gallery() {
     return (
       <div class='gallery'>
         <div>
-          <h1>Gallery</h1>
-        </div>
-        <div class="flex-gallery">
-          <img src={require('../pics/beautiful-point-loma.jpg')} />
-          <img src={require('../pics/beautiful-point-loma.jpg')} />
-          <img src={require('../pics/beautiful-point-loma.jpg')} />
-          <img src={require('../pics/beautiful-point-loma.jpg')} />
-          <img src={require('../pics/beautiful-point-loma.jpg')} />
-          <img src={require('../pics/beautiful-point-loma.jpg')} />
-          <img src={require('../pics/beautiful-point-loma.jpg')} />
-          <img src={require('../pics/beautiful-point-loma.jpg')} />
-          <img src={require('../pics/beautiful-point-loma.jpg')} />
+          <img src='https://www.spawglass.com/wp-content/uploads/2017/04/HomeBigImage-Man.png' />
         </div>
       </div>
     );
