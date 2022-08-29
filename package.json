@@ -2,7 +2,7 @@
   "name": "finchsfingernails",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://switch2512.github.io/finchsfingernails",
+  "homepage": "https://finchsfingernails.rocks",
   "dependencies": {
     "-": "^0.0.1",
     "@testing-library/jest-dom": "^5.16.4",
