@@ -8,9 +8,9 @@ function Pricing(props) {
           <div class='price-item'><h1>General Services</h1></div>
           <div class='price-item'><h1>Price</h1></div>
           <div class='price-item'><h2>Single Color Gels</h2></div>
-          <div class='price-item'><h2>$15+</h2></div>
+          <div class='price-item'><h2>$20+</h2></div>
           <div class='price-item'><h2>Tips With Gel</h2></div>
-          <div class='price-item'><h2>25+</h2></div>
+          <div class='price-item'><h2>$30+</h2></div>
           <div class='price-item'><h1>Additional Services</h1></div>
           <div class='price-item'><h1>Price</h1></div>
           <div class='price-item'><h2>Gel Removal</h2></div>

@@ -22,7 +22,7 @@ function Home(props) {
           <div class='subtext1'><h1>BOOK TODAY</h1></div>
           <div class='subtext2'>
             <h2>FINCH'S NAILS OFFERS A VARIETY OF MANICURE SERVICES RIGHT FROM THE COMFORT OF YOUR OWN DORM</h2>
-            <p>NICOLE GIETZEN<br/>@instagram-handle</p>
+            <p>NICOLE GIETZEN<br/>@finchs_fingernails</p>
           </div>
         </div>
       </div>
